@@ -1,11 +1,14 @@
 {
   "name": "vload",
-  "description": "A Vue.js project",
-  "version": "1.0.0",
+  "description": "loading加载器，8k",
+  "version": "1.0.3",
   "author": "张应颖 <1184762165@qq.com>",
   "license": "MIT",
-  "private": false,
   "main": "dist/vload.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zooey1184/vload"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

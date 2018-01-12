@@ -1,15 +1,19 @@
 <template>
   <div id="app">
-    dasda
+    <button type="button" name="button" style="{width: 100px; height: 40px}" @click="a">click me</button>
   </div>
 </template>
 
 <script>
+// import vload from '../dist/vload.js'
+// import vload from '../src/lib/index.js'
+
 export default {
   name: 'app',
-  data () {
-    return {
-
+  methods: {
+    a() {
+      this.$load.show()
+      console.log(this.$load);
     }
   }
 }

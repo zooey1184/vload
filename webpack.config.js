@@ -10,7 +10,7 @@ module.exports = {
     filename: 'vload.js',
     library: 'vload',
     libraryTarget: 'umd',
-    // umdNameDefine: true
+    umdNamedDefine: true
   },
   module: {
     rules: [

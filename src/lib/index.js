@@ -7,9 +7,9 @@ LoadPlugin.install = function(Vue, options) {
   }
   let vload = Vue.extend(Loading)
   let loadVm = new vload()
-  // if (typeof window !== 'undefined' && window.Vue) {
-  //   window.Vue.use(vload);
-  // }
+  if (typeof window !== 'undefined' && window.Vue) {
+    window.Vue.use(loadVm);
+  }
   let tpl = loadVm.$mount().$el
   document.body.appendChild(tpl)
 
